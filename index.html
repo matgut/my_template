@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDEBAR MENU CGMDEV</title>
+    <link rel="stylesheet" href="style.css">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/67ca50a492.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <div class="contenido-logo">
+                <div class="nombre-logo"> &lt;GMDEV&bsol;&gt; </div>
+            </div>
+            <i class="fas fa-bars" id="btn-menu"></i>
+        </div>
+        <ul class="nav-items">
+            <li>
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Buscar..">
+                    <span class="tooltip">
+                        Buscar
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-th-large"></i>
+                    <span class="nombre-items">
+                        Dashboard
+                    </span>
+                    <span class="tooltip">
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-users"></i>
+                    <span class="nombre-items">
+                        Usuarios
+                    </span>
+                    <span class="tooltip">
+                        Usuarios
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-comment-dots"></i>
+                    <span class="nombre-items">
+                        Mensajes
+                    </span>
+                    <span class="tooltip">
+                        Mensajes
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-chart-pie"></i>
+                    <span class="nombre-items">
+                        Analisis
+                    </span>
+                    <span class="tooltip">
+                        Analisis
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-folder-open"></i>
+                    <span class="nombre-items">
+                        Archivos
+                    </span>
+                    <span class="tooltip">
+                        Archivos
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="nombre-items">
+                        Carrito de compras
+                    </span>
+                    <span class="tooltip">
+                        Carrito de compras
+                    </span> 
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-save"></i>
+                    <span class="nombre-items">
+                        Guardados
+                    </span>
+                    <span class="tooltip">
+                        Guardados
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span class="nombre-items">
+                        Configuraciones
+                    </span>
+                    <span class="tooltip">
+                        Configuraciones
+                    </span>
+                </a>
+            </li>
+        </ul>
+        <div class="perfil">
+            <div class="contenido-perfil">
+                <div class="detalle-perfil">
+                    <img src="logo_cgm.PNG" alt="">
+                    <div class="nombre-profesion-perfil">
+                        <div class="nombre-perfil">CGMDEV</div>
+                        <div class="profesion-perfil">Desarrollador de software</div>
+                    </div>
+                </div>
+                <i class="fas fa-sign-out-alt" id="btn-cerrar-sesion"></i>
+            </div>
+        </div>
+    </div>
+    <div class="contenido-principal">
+        <div class="text">
+            home content
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        let btnMenu = document.querySelector("#btn-menu");
+        let sidebarPanel = document.querySelector(".sidebar");
+        let btnBuscar = document.querySelector(".fa-search");
+
+        
+        btnMenu.addEventListener("click",(e) => {
+            e.preventDefault();
+            sidebarPanel.classList.toggle("active");
+
+        });
+
+
+
+    </script>
+</body>
+</html>
